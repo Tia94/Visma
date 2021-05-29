@@ -52,7 +52,6 @@ namespace Visma.Core.Tests.Domain
             
             Assert.Contains(firstRole, user.Roles);
             Assert.Contains(secondRole, user.Roles);
-
         }
 
         [Fact]

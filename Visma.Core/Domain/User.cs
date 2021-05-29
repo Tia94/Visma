@@ -28,9 +28,9 @@ namespace Visma.Core.Domain
 
         public void AssignRoles(params Role[] roles)
         {
-            foreach (var r in roles)
+            foreach (var role in roles)
             {
-                AssignRole(r);
+                AssignRole(role);
             }
         }
 

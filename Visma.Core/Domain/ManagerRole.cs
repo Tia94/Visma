@@ -10,10 +10,5 @@ namespace Visma.Core.Domain
         {
 
         }
-
-        public void Notify()
-        {
-
-        }
     }
 }

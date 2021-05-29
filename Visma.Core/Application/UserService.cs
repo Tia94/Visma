@@ -21,11 +21,9 @@ namespace Visma.Core.Application
             userRepository.AddUser(user);
         }
 
-
         public void AssignRoleToUser(Role role, string userEmail)
         {
             var user = userRepository.GetUser(userEmail);
-            //var role = userRepository.GetRole(roleName);
 
             if (role == null)
             {
@@ -45,7 +43,5 @@ namespace Visma.Core.Application
             var permissions = user.DeterminePermissions();
             return permissions;
         }
-
-
     }
 }

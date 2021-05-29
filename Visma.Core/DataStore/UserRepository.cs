@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Visma.Core.Application;
 using Visma.Core.Domain;
 
-namespace Visma.Core.Application
+namespace Visma.Core.DataStore
 {
-    class UserRepository : IUserRepository
+   public class UserRepository : IUserRepository
     {
-        private List<User> users = new List<User>();
+        public List<User> users = new List<User>();  //should be private but here I put it public for testing purposes 
 
         public bool AddUser(User user)
         {
