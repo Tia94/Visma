@@ -29,7 +29,6 @@ namespace Visma.Core.Application
                 throw new ArgumentException("The role does not exist");
             }
             role.AssignPermission(permissions);
-
         }
 
     }
