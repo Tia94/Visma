@@ -8,7 +8,7 @@ namespace Visma.Core.DataStore
 {
     public class RoleRepository
     {
-        private List<Role> roles = new List<Role>();
+        public List<Role> roles = new List<Role>(); //should be private, public only for testing purposes
 
         public bool AddRole(Role role)
         {

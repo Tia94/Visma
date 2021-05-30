@@ -41,7 +41,7 @@ namespace Visma.Core.Tests.DataStore
             usrerRepository.AddUser(user);
             var userFromRepo = usrerRepository.GetUser(user.Email);
 
-            Assert.Equal(userFromRepo, user);
+            Assert.Same(userFromRepo, user);
             Assert.Null(usrerRepository.GetUser("other email"));
         }
     }

@@ -1,0 +1,10 @@
+1. Design patterns:
+a) Dependency injection in UserService constructor as it receives the IF instread of calling new to initialize  it.
+b) Observer design pattern can be used to implement the requirment where a manager should be notified when a user register in his department.
+
+2.
+I worked only with SQL until now so I am going to choose SQL.
+It will looks:
+User tabel (PK userId)
+Role tabel  (PK roleId)
+user-Role tabel (many to many relashionship between users and roles) witll contain both userId and roleId
